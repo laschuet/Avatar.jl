@@ -7,8 +7,16 @@ Simple image generator for grid-like avatars using modifiable color palettes
 ```julia
 using Avatar
 
-# TODO
+# Specify own parameters
+generate(cells_x, cells_y, cell_size_x, cell_size_y, palette, out)
+
+# Use default parameters
+generate() # same as generate(5, 5, 80, 80, p932683, "avatar.png")
 ```
+
+Please refer to the source code for instructions how to specify color palettes.
+Two exemplary palettes are already given.
+
 ## Example
 
 <img
