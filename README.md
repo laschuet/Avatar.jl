@@ -9,6 +9,14 @@ using Avatar
 
 # TODO
 ```
+## Example
+
+<img
+    src="https://avatars0.githubusercontent.com/u/16260432?s=200&v=4"
+    alt="Example"
+    width="200"
+    height="200"
+/>
 
 ## License
 
