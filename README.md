@@ -6,7 +6,7 @@
 [![Coverage Status](https://coveralls.io/repos/laschuet/Avatar.jl/badge.svg?branch=master&service=github)](https://coveralls.io/github/laschuet/Avatar.jl?branch=master)
 [![codecov.io](http://codecov.io/github/laschuet/Avatar.jl/coverage.svg?branch=master)](http://codecov.io/github/laschuet/Avatar.jl?branch=master)
 
-Simple image generator for grid-like avatars using modifiable color palettes
+Simple image generator for grid-like avatars using modifiable color palettes.
 
 ## Usage
 
