@@ -63,6 +63,7 @@ end
 export
     generate,
     p848743,
-    p932683
+    p932683,
+    p379413
 
 end # module Avatar
