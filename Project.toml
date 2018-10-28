@@ -1,0 +1,12 @@
+name = "Avatar"
+uuid = "a184dc7c-dad4-11e8-35c5-234cea234935"
+
+[deps]
+ImageMagick = "6218d12a-5da1-5696-b52f-db25d2ecc6d1"
+Images = "916415d5-f1e6-5110-898d-aaa5f9f070e0"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

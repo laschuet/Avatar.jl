@@ -55,4 +55,4 @@ export
     p848743,
     p932683
 
-end
+end # module Avatar
