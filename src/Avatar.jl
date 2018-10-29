@@ -60,10 +60,9 @@ function generate(cells_x=5, cells_y=5, cell_size_x=80, cell_size_y=80,
     save(out, GRID)
 end
 
-export
-    generate,
-    p848743,
-    p932683,
-    p379413
+export generate,
+        p848743,
+        p932683,
+        p379413
 
 end # module Avatar
