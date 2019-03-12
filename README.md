@@ -6,22 +6,20 @@
 [![coveralls status](https://coveralls.io/repos/github/laschuet/Avatar.jl/badge.svg?branch=master)](https://coveralls.io/github/laschuet/Avatar.jl?branch=master)
 [![codecov status](https://codecov.io/gh/laschuet/Avatar.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/laschuet/Avatar.jl)
 
-Simple image generator for grid-like avatars using modifiable color palettes.
+Simple image generator for grid-like avatars using color palettes from
+[COLOURlovers](https://www.colourlovers.com).
 
 ## Usage
 
 ```julia
 using Avatar
 
-# Specify parameters
-generate(cells_x, cells_y, cell_size_x, cell_size_y, palette, out)
+# Specify parameters (palette_id must be a valid palette id from COLOURlovers)
+generate(cells_x, cells_y, cell_size_x, cell_size_y, palette_id, out)
 
 # Use default parameters
-generate() # same as generate(5, 5, 80, 80, p932683, "avatar.png")
+generate() # same as generate(5, 5, 80, 80, 379413, "avatar.png")
 ```
-
-Please refer to the source code for instructions on how to specify color
-palettes. Two exemplary palettes have already been defined.
 
 ## Example
 
