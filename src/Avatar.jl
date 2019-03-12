@@ -1,5 +1,7 @@
 module Avatar
 
+export generate
+
 using HTTP
 using Images
 using JSON
@@ -20,7 +22,5 @@ function generate(cells_x=5, cells_y=5, cell_size_x=80, cell_size_y=80,
     img = repeat(img, inner=(cell_size_x, cell_size_y))
     save(out, img)
 end
-
-export generate
 
 end # module Avatar
