@@ -35,29 +35,9 @@ p379413 = [
 """"""
 function generate(cells_x=5, cells_y=5, cell_size_x=80, cell_size_y=80,
                     palette=p379413, out="avatar.png")
-    CELL1 = fill(palette[1], cell_size_x, cell_size_y)
-    CELL2 = fill(palette[2], cell_size_x, cell_size_y)
-    CELL3 = fill(palette[3], cell_size_x, cell_size_y)
-    CELL4 = fill(palette[4], cell_size_x, cell_size_y)
-    CELL5 = fill(palette[5], cell_size_x, cell_size_y)
-    cells = [CELL1, CELL2, CELL3, CELL4, CELL5]
-
-    # Initialize first row of final grid
-    GRID = rand(cells)
-    for i in 1 : cells_y - 1
-        GRID = [GRID rand(cells)]
-    end
-
-    # Concatenate more rows
-    for i in 1 : cells_x - 1
-        ROW = rand(cells)
-        for j in 1 : cells_y - 1
-            ROW = [ROW rand(cells)]
-        end
-        GRID = [GRID; ROW]
-    end
-
-    save(out, GRID)
+    img = rand(palette, cells_x, cells_y)
+    img = repeat(img, inner=(cell_size_x, cell_size_y))
+    save(out, img)
 end
 
 export generate,
